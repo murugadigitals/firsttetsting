@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box  ;
+        }
+       
+        .child img{
+            border-radius: 20px;
+            margin-top: 25px;
+            transform: scale(1);
+            transition-duration: 2s;
+        }
+        .child img:hover{
+            transform: scale(1.1);
+            transition-duration: 1s;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+       
+        main{
+            width: 100%;
+            margin:auto;
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: center;
+            gap: 10px;
+        }
+        .child{
+            width: 25%;
+            padding: 15px;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+        @media screen and ( max-width:700px) {
+            main{
+                width: 100%;
+            }
+            main div .child{
+                width: 100%;
+            }
+            
+        }   
+    </style>
+</head>
+<body>
+    <main>
+        <div class="child">
+            <img src="../../public/images/pooja.jpg" alt="" width="300" height="300">
+        </div>
+        <div class="child">
+            <img src="../../public/images/ashika.jpg" alt="" width="300" height="300">
+        </div>
+        <div class="child">
+            <img src="../../public/images/kajal.jpg" alt="" width="300" height="300">
+        </div>
+        <div class="child">
+            <img src="../../public/images/mb.jpg" alt="" width="300" height="300">
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../src/styles/response.css">
+    <style>
+        @media screen and (max-width: 600px) {
+            nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                border: 1px solid black;
+            }
+
+            button {
+                /* display: inline; */
+            }
+
+            .menu {
+                display: none;
+            }
+
+            div {
+                color: red;
+            }
+        }
+        @media screen and (min-width: 601px) {
+            nav {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 10px;
+                border: 1px solid black;
+            }
+
+            button {
+                /* display: inline; */
+                display: none;
+            }
+
+            .menu {
+                display: inline;
+            }
+            .menu span{
+                margin-right: 20px;
+
+            }
+
+            div {
+                color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>Shopping</div>
+        <div class="menu">
+            <span>Home</span>
+            <span>Shop</span>
+            <span>Pages</span>
+            <span>Blog</span>
+        </div>
+        <button class="bi bi-justify"></button>
+    </nav>
+</body>
+
+</html>

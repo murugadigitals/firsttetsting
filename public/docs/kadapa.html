@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../src/styles/mailcss.css">
+    <Style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-shadow: border-box;
+        }
+
+        main {
+            /* border: 1px solid red; */
+            width: 700px;
+            text-align: center;
+            /* border: none; */
+            border-radius: 10px;
+        }
+
+        table {
+            border: 1px solid red;
+            border-radius: 10px;
+        }
+
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+
+        }
+    </Style>
+
+    <script>
+        function bodyload() {
+
+            var today = new Date();
+            // var mdate = today.getDate() + "-" + (today.getMonth() + 1) + "-" + today.getFullYear();
+            // var mdate=today.toLocaleDateString();+""+today.toLocaleTimeString();
+            let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            var mdate = `${today.getDate()}-${months[today.getMonth()]}-${today.getFullYear()}`
+            var datetime = `${today.getDate()}-${today.getMonth() + 1}-${today.getFullYear()} ${today.toLocaleTimeString()}`
+            // 'var maillist = prompt("Enter Mail List Name")
+
+            document.querySelector("h4").innerHTML = `
+
+            Department of Posts :: India <br> Tirupati TMO - 517501<br><u>Mail list To : Cuddapah TMO   &nbsp;&nbsp;&nbsp;          SET : 2   &nbsp;&nbsp;    Dated : ${mdate}</u>
+            
+            <br>`
+            // <br>-------------------------------------------------------------------`;
+            document.getElementById('leftTxt').innerHTML = `<h4><span style="text-decoration:underline">Note: All Bags were dealt in IT 2.0 Olny.</span> <br>Report Printed On : ${datetime}</h4>`;
+
+            document.getElementById("rightTxt").innerHTML = `<h4><span class="bi bi-whatsapp"</span>&nbsp;+91 7396128940
+                <br><span class="bi bi-telephone "</span>&nbsp;&nbsp;+91 8121963271
+                <br><span class="bi bi-envelope-at"</span>&nbsp;msharipdtr@gmail.com
+                
+                <h4>`;
+            document.getElementById("rightTxt").style.textAlign = 'right'
+
+        }
+
+    </script>
+</head>
+
+<body contenteditable="true" onload="bodyload()">
+    <header id="container" class="">
+        <h4></h4>
+    </header>
+    <main style="text-align: center;width: 100%;margin: 30px auto !important;">
+
+        <table align="center" style="width: 700px;">
+            <!-- <caption>Data Updated on 26/03/2024</caption> -->
+            <thead>
+                <tr bgcolor="yellow" style="font-size: 21px;">
+                    <th WIDTH="20" rowspan="2" style="border-top-left-radius: 10px !important;">S.NO</th>
+                    <th WIDTH="150" rowspan="2">From Office</th>
+                    <th WIDTH="200" rowspan="2">TO Office</th>
+                    <th WIDTH="70" colspan="4">Bag Type</th>
+                    <th WIDTH="150" rowspan="2" style="border-top-right-radius: 10px;">Bag Number</th>
+                </tr>
+                <tr bgcolor="yellow" style="font-size: 21px;">
+                    <th ROWSPAN="2">TB</th>
+                    <th>SP</th>
+                    <th>PL</th>
+                    <th>PKT</th>
+                </tr>
+            </thead>
+            <tbody align="center" style="font-size: 20px;">
+                <tr>
+                    <td>1</td>
+                    <td>Tirupati HUB/2</td>
+                    <td class="textIndent" style="text-align:center">Cuddapah ICH</td>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Tirupati HUB/2</td>
+                    <td class="textIndent" style="text-align:center">Cuddapah ICH</td>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <div id="leftTxt" style="position:fixed;top:960px">
+
+        </div>
+        <div id="rightTxt" style="position:fixed;top:960px;right:0px;line-height: 50px;">
+
+        </div>
+    </footer>
+
+    <div class="logo">
+        <div class="leftlogo">
+            <img src="../../public/images/logo.png" width="140px" height="70px">
+        </div>
+        <div class="rightlogo">
+            <img src="../../public/images/ashok.png" width="100px" height="70px">
+
+        </div>
+    </div>
+
+    <div align="left">
+        <h4>&nbsp;&nbsp;Bag(s) Dispatched By <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( 10163797 )</h4>
+    </div>
+
+
+</body>
+
+</html>

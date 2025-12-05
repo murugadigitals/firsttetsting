@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  height: 40px;
+  padding: 5px;
+}
+
+#barcode {
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  font-size: 1.5rem;
+}
+@font-face {
+  font-family: barcode;
+  src: url("../../public/images/bar.ttf");
+}
+#officeBagNumber {
+  font-family: barcode;
+  font-size: 0.8rem;
+  width: 200px;
+}
+
+#mainContainer{
+    display: none;
+}

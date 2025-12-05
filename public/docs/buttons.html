@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        button{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container m-5 w-25 my-3 border border-1 d-flex justify-content-center align-items-center gap-1">
+        <div>
+            <button class="btn btn-primary fw-bold w-100 my-3" id="alaram" onclick="incCount()">
+                +
+            </button>
+        </div>
+        <div>
+            <button class="btn btn-primary fw-bold w-100 my-2" id="alaram1" onclick="decCount()">
+                -
+            </button>
+        </div>
+    </div>
+    <div id="count" class="px-2 w-25 m-5 rounded rounded-1 text-center" style="display: inline-block;"></div>
+    <script src="../../src/scripts/index.js"></script>
+</body>
+</html>
