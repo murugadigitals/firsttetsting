@@ -1,20 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../src/styles/res.css">
     <script>
-        const audio=new Audio("../../public/videos/gudiya.mp3");
-        function clickToPlay(){
+        const audio = new Audio("../../public/videos/gudiya.mp3");
+        function clickToPlay() {
             audio.play();
-            audio.loop=true;
+            audio.loop = true;
+        }
+        function clickToPause() {
+            audio.pause();
         }
     </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .audio {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            z-index: 1000;
+            /* background-color: yellow; */
+        }
+
+        .main {
+            padding: 20px;
+            max-width: 990px;
+            margin: 30px auto;
+            line-height: 1.6;
+            text-align: justify;
+            /* text-indent: 50px; */
+            font-weight: bold;
+            color: rgb(22, 21, 21);
+        }
+
+        .main p {
+            float: right;
+            margin-right: 20px;
+        }
+        .main img{
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+    </style>
 
 </head>
+
 <body onload="clickToPlay()">
-    <button class="btn btn-danger" onclick="clickToPlay()">Click to Play</button>
+    <div class="audio">
+        <button class="btn btn-danger bi bi-play-fill" onclick="clickToPlay()"></button>
+        <button class="btn btn-danger bi bi-pause-fill" onclick="clickToPause()"></button>
+    </div>
+    <div class="main">
+        <div style="text-align: center;">
+            <img src="../../public/images/ashika.jpg" alt="" width="200" height="200"
+                title="Ashika Ranganath Kannada Actress">
+            <img src="../../public/images/kajal.jpg" alt="" width="200" height="200"
+                title="Ashika Ranganath Kannada Actress">
+            <img src="../../public/images/mb.jpg" alt="" width="200" height="200" style="float: right;"
+                title="Ashika Ranganath Kannada Actress">
+            <img src="../../public/images/pooja.jpg" alt="" width="200" height="200" style="float:left"
+                title="Ashika Ranganath Kannada Actress">
+        </div>
+        <p style="margin-top: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus amet nihil qui
+            magni fugiat, alias rem, eius inventore ut excepturi sunt. Aperiam facilis, fugiat dignissimos odio
+            consequatur repellat sunt qui aspernatur error sed exercitationem, corporis quas sapiente maxime
+            voluptatibus eaque! Minima, alias porro voluptates ducimus repellendus consectetur non earum vitae
+            architecto voluptatem itaque, voluptas eveniet eaque obcaecati, aperiam quod aliquid ut accusamus.
+            Repellendus odit quo fuga nostrum sapiente exercitationem error commodi, minus quidem molestias adipisci,
+            facilis dolorum. Soluta vitae magni cupiditate cumque nemo exercitationem dolores atque, non minima ex
+            tenetur obcaecati iusto quia praesentium nulla eligendi corporis maiores est numquam! Nesciunt illum aperiam
+            quo temporibus, odit voluptate nisi voluptatum nam corporis perferendis hic placeat blanditiis voluptas esse
+            eveniet sequi quasi facere dicta ipsum aliquid! Vitae, minus ut totam, sunt tenetur illum, beatae et sequi
+            corporis natus recusandae reiciendis alias quia accusantium. Possimus impedit, earum in quo similique
+            ratione reprehenderit animi totam tenetur harum praesentium ipsum a quia iste alias repudiandae saepe
+            quibusdam debitis nam, deleniti quaerat. Pariatur quia error earum sequi nihil vero est aspernatur iusto et
+            itaque quasi labore fugit doloribus, accusamus voluptatibus autem consequatur nam. Assumenda dignissimos
+            eaque nihil, nisi provident illo dolor facilis esse id similique, soluta consequuntur, aliquid officia
+            voluptatem rem veritatis. A aliquid consequatur, blanditiis, ex, sed praesentium tempora obcaecati sint
+            accusamus natus itaque quaerat iusto quas nisi ipsum quidem ducimus! Possimus magni distinctio, libero illum
+            magnam tempora temporibus esse vel voluptatem perferendis ut explicabo sapiente ipsa, tenetur quidem a nemo
+            mollitia quae consequatur? Ipsum temporibus perspiciatis modi dolore? Deleniti quibusdam, molestias, vero
+            pariatur quas harum quidem aut labore dolorem aspernatur excepturi eveniet illum, commodi dignissimos
+            blanditiis illo atque beatae sequi. Beatae eius, quas quam, aspernatur atque labore, distinctio fugiat
+            repellendus rerum voluptatibus quis ad est in aut qui nam ea quo? A dicta explicabo error consequatur porro
+            deleniti impedit recusandae saepe animi? Quibusdam voluptas id quisquam at animi, inventore molestias
+            tempora tenetur praesentium expedita ab facilis impedit eos obcaecati in asperiores voluptate ipsa debitis
+            natus et? Quas perferendis perspiciatis ad mollitia sequi tenetur atque quos quibusdam molestiae debitis?
+            Rerum commodi neque nobis dolor! Reprehenderit quasi recusandae illum sunt asperiores quis itaque,
+            distinctio velit magni nihil, commodi laudantium ab earum minus, nostrum aliquid tenetur? Cupiditate vero
+            esse maxime corrupti, incidunt excepturi consequuntur dolores quos unde totam voluptatibus tempora. Nostrum
+            sit repellendus expedita eum quod ea odio molestiae autem, fuga fugiat animi modi quae suscipit, molestias
+            atque quam quaerat facere officiis iusto nam nobis sed. Iste deserunt modi officiis dignissimos itaque
+            aspernatur rerum ea, excepturi quaerat fugiat illo exercitationem odio porro velit maxime, quos quae placeat
+            aliquid nulla ipsam a enim ipsum natus. Eum, est, voluptatibus soluta obcaecati ullam dolorem maxime
+            inventore nihil ex vel dolore tempora illo magnam consequuntur ea molestiae assumenda facere vero mollitia
+            dolorum eos harum distinctio quos aut. Saepe voluptatum ratione harum dolorem necessitatibus atque
+            consequatur quidem excepturi magni animi et tempore aut, nobis repellendus architecto, praesentium pariatur.
+            Quas at praesentium culpa ipsam soluta reiciendis numquam quisquam laboriosam voluptates sequi? Impedit,
+            nemo!</p>
+    </div>
+    <script src="../../src/audio.js"></script>
 </body>
+
 </html>
